@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sehat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles */
+        body {
+            background-color: white;
+        }
+        .navbar {
+            background-color: #007bff; /* Blue color */
+        }
+        .navbar-brand {
+            color: white;
+            font-weight: bold;
+        }
+        .nav-link {
+            color: white;
+        }
+        .hero-section {
+            background-color: #f8f9fa; /* Light gray */
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero-section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .services, .testimonials, .faq, .contact, .footer {
+            padding: 60px 0;
+        }
+        .footer {
+            background-color: #343a40; /* Dark gray */
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Sehat</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#bmi">BMI Check</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <h1>Welcome to Sehat</h1>
+        <p>Your health, our priority.</p>
+        <img src="https://source.unsplash.com/1600x900/?health,fitness" alt="Health Image">
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Sehat is dedicated to providing the best health services to our community.</p>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://source.unsplash.com/400x300/?service,health" alt="Service 1" class="img-fluid">
+                <h3>Service 1</h3>
+                <p>Description of service 1.</p>
+                <button class="btn btn-primary">Learn More</button>
+            </div>
+            <div class="col-md-4">
+                <img src="https://source.unsplash.com/400x300/?service,health" alt="Service 2" class="img-fluid">
+                <h3>Service 2</h3>
+                <p>Description of service 2.</p>
+                <button class="btn btn-primary">Learn More</button>
+            </div>
+            <div class="col-md-4">
+                <img src="https://source.unsplash.com/400x300/?service,health" alt="Service 3" class="img-fluid">
+                <h3>Service 3</h3>
+                <p>Description of service 3.</p>
+                <button class="btn btn-primary">Learn More</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+    <div class="container">
+        <h2>What Our Clients Say</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://source.unsplash.com/100x100/?person" alt="Client 1" class="rounded-circle">
+                <p>"Great service!"</p>
+                <p>⭐⭐⭐⭐⭐</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://source.unsplash.com/100x100/?person" alt="Client 2" class="rounded-circle">
+                <p>"Highly recommended."</p>
+                <p>⭐⭐⭐⭐⭐</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://source.unsplash.com/100x100/?person" alt="Client 3" class="rounded-circle">
+                <p>"Will come back again!"</p>
+                <p>⭐⭐⭐⭐⭐</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq" class="faq">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What is Sehat?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Sehat is a health service provider.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How can I contact Sehat?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        You can contact us via the contact form below.
+                    </div>
+                </div>
+            </div>
+            <!-- Add more FAQ items as needed -->
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Sehat. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
